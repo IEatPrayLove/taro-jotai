@@ -1,0 +1,48 @@
+// 背景主题色
+$bg_subject     :#f7f8fd;
+// 字体主色调
+$font_color_main:#789;
+
+// 弹性布局
+$flex-jc: (start: flex-start,
+  end : flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+);
+$flex-ai: (start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+);
+$flex-direction:(row:row,
+  row-reverse:row-reverse,
+  column:column,
+  column-reverse:column-reverse,
+);
+@each $key,$value in $flex-direction{
+  .flex-#{$key}{
+    display: flex;
+    flex-direction: $value;
+  }
+}
+@each $key,$value in $flex-jc{
+  .jc-#{$key}{
+    justify-content: $value;
+  }
+}
+@each $key,$value in $flex-ai{
+  .ai-#{$key}{
+    align-items: $value;
+  }
+}
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100%;
+}
+.flex-1{
+  flex: 1;
+}

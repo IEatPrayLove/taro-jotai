@@ -1,0 +1,14 @@
+.select_choose_container{
+  border: 1px solid #222;
+  box-sizing: border-box;
+  .select_choose_item{
+    padding: 5px 10px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 16px 5px;
+  }
+}
+.select_choose_btn{
+  padding: 5px 10px;
+}
